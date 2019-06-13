@@ -27,6 +27,9 @@ def feature_extraction(img, feature):
         nlevels = 64
 
         # Your code here. You should also change the return value.
+        hog = cv2.HOGDescriptor(win_size, block_size, block_stride, cell_size, nbins, deriv_aperture, win_sigma,
+                                histogram_norm_type, l2_hys_threshold, gamma_correction, nlevels)
+
 
         return np.zeros((1500, 36))
 

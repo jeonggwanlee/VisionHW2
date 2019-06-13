@@ -2,12 +2,14 @@ import os
 
 import numpy as np
 
+# 1
 from build_vocabulary import build_vocabulary
 from create_results_webpage import create_results_webpage
 from get_bags_of_words import get_bags_of_words
 from get_image_paths import get_image_paths
 from svm_classify import svm_classify
 from get_spatial_pyramid_feats import get_spatial_pyramid_feats
+# 2
 from pca_visualize import pca_visualize
 
 # feature = 'HoG'
