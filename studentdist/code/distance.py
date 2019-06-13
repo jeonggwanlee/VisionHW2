@@ -2,6 +2,12 @@ import numpy as np
 
 
 def pdist(a, b):
+    """
+
+    :param a:
+    :param b:
+    :return:
+    """
     a_square = np.einsum('ij,ij->i', a, a)
     a_square = np.tile(np.reshape(a_square, [a.shape[0], 1]), [1, b.shape[0]])
     b_square = np.einsum('ij,ij->i', b, b)

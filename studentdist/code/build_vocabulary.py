@@ -4,6 +4,7 @@ import numpy as np
 from feature_extraction import feature_extraction
 from kmeans_clustering import kmeans_clustering
 
+from tqdm import tqdm
 
 def build_vocabulary(image_paths, vocab_size, feature):
     """
@@ -18,13 +19,17 @@ def build_vocabulary(image_paths, vocab_size, feature):
     """
     all_features = []
 
-    for path in image_paths:
+    ## DEBUGING###
+
+    for i in tqdm(range(len(image_paths))):
+        path = image_paths[i]
         img = cv2.imread(path)[:, :, ::-1]  # 이미지 읽기
 
         features = feature_extraction(img, feature)  # 이미지에서 feature 추출
         all_features.append(features)  # feature들을 리스트에 추가
 
     all_features = np.concatenate(all_features, 0)  # 모든 feature들을 붙여서 하나의 matrix 생성
+    print("all_features.shape : {}".format(all_features.shape))
 
     # k-means clustering
     centers = kmeans_clustering(all_features, vocab_size, 1e-4, 100)

@@ -27,17 +27,36 @@ def feature_extraction(img, feature):
         nlevels = 64
 
         # Your code here. You should also change the return value.
-        hog = cv2.HOGDescriptor(win_size, block_size, block_stride, cell_size, nbins, deriv_aperture, win_sigma,
-                                histogram_norm_type, l2_hys_threshold, gamma_correction, nlevels)
 
+        ## and use an image grid size 16 for HOG.
+        ## and if we run HOG then it becomes 36.
 
+        hog = cv2.HOGDescriptor(win_size, block_size, block_stride, cell_size, nbins,
+                                deriv_aperture, win_sigma, histogram_norm_type,
+                                l2_hys_threshold, gamma_correction, nlevels)
+
+        hist = hog.compute(img)
+        #import ipdb; ipdb.set_trace()
         return np.zeros((1500, 36))
 
     elif feature == 'SIFT':
 
         # Your code here. You should also change the return value.
 
-        return np.zeros((1500, 128))
+        ## When you implement SIFT, use an image grid size 20.
+        ## we run SIFT feature extractor with parameters given in the starter code
+        ## then the feature dimension becomes 128, and
+
+        gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        sift = cv2.xfeatures2d.SIFT_create()
+        _, descriptors = sift.detectAndCompute(gray, None)
+        # try:
+        #     pad = np.zeros([2000 - descriptors.shape[0], 128])
+        # except:
+        #     print(descriptors.shape[0])
+        #     import ipdb; ipdb.set_trace()
+        # descriptors = np.concatenate([descriptors, pad], axis=0)
+        return descriptors
 
 
 
