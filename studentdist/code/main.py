@@ -67,7 +67,6 @@ def main():
                   'Computing one from training images')
 
             vocab = build_vocabulary(train_image_paths, vocab_size, feature)
-            import ipdb; ipdb.set_trace()
             np.save('vocab_sift', vocab)
 
     pca_visualize(pca_out_dim, feature, vocab_size)

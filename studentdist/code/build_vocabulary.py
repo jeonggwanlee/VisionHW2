@@ -19,8 +19,6 @@ def build_vocabulary(image_paths, vocab_size, feature):
     """
     all_features = []
 
-    ## DEBUGING###
-
     for i in tqdm(range(len(image_paths))):
         path = image_paths[i]
         img = cv2.imread(path)[:, :, ::-1]  # 이미지 읽기

@@ -16,22 +16,26 @@ def get_features_from_pca(feat_num, feature):
         vocab = np.load('vocab_hog.npy')
     elif feature == 'SIFT':
         vocab = np.load('vocab_sift.npy')
+
     # Your code here. You should also change the return value.
-    import ipdb
+    vocab_size = vocab.shape[0]
+    #cov1 = np.cov(vocab)
+    #w1, v1 = np.linalg.eig(cov1)
 
-    feature_mean = np.mean(vocab, axis=0)
-    feature_mean_tile = np.tile(feature_mean, (vocab.shape[0], 1))
-    # (200, 2)
-    vocab_centered = vocab - feature_mean_tile
-    vocab = vocab_centered
+    vocab_mean = np.mean(vocab, axis=0)
+    vocab = vocab - np.tile(vocab_mean, (vocab_size, 1))
+    #cov2 = np.cov(vocab)
+    #w2, v2 = np.linalg.eig(cov2)
 
-    vocab_std = np.std(vocab, axis=0)
-    vocab = vocab / vocab_std
-
+    vocab = vocab / np.std(vocab, axis=0)
     cov = np.cov(vocab)
-    w, v = np.linalg.eig(cov)
+    eig_value, eig_vector = np.linalg.eig(cov)
 
-    ipdb.set_trace()
-    return np.zeros((vocab.shape[0],2))
+    eig_vectors = []
+    for feat_idx in range(feat_num):
+        eig_vectors.append(np.real(eig_vector[feat_idx]))
+    eig_vectors = np.transpose(eig_vectors)
+
+    return eig_vectors
 
 

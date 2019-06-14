@@ -32,3 +32,4 @@ def pca_visualize(pca_out_dim, feature, vocab_size):
         for i in range(vocab_size):
             plt.scatter(reduced_vocab[i, 0], reduced_vocab[i, 1])
         plt.show()
+

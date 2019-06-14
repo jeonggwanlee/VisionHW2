@@ -34,8 +34,11 @@ def feature_extraction(img, feature):
         hog = cv2.HOGDescriptor(win_size, block_size, block_stride, cell_size, nbins,
                                 deriv_aperture, win_sigma, histogram_norm_type,
                                 l2_hys_threshold, gamma_correction, nlevels)
-
-        hist = hog.compute(img)
+        winStride = (32, 32)
+        padding = (0, 0)
+        #locations = ((10, 20),)
+        hist = hog.compute(img, winStride, padding)
+        import ipdb; ipdb.set_trace()
         #import ipdb; ipdb.set_trace()
         return np.zeros((1500, 36))
 
