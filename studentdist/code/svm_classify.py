@@ -26,7 +26,10 @@ def svm_classify(train_image_feats, train_labels, test_image_feats, kernel_type)
     num_categories = len(categories)
     for cat_i in tqdm(range(num_categories)):
         category = categories[cat_i]
-        svc = svm.SVC(probability=True)
+        if kernel_type == 'RBF':
+            svc = svm.SVC(kernel='rbf', probability=True)
+        elif kernel_type == 'linear':
+            svc = svm.SVC(kernel='linear', probability=True)
         this_category_idx = np.where(train_labels == category)[0]
         new_label_for_svm = np.where(train_labels == category, 1, 0)
 
@@ -38,6 +41,7 @@ def svm_classify(train_image_feats, train_labels, test_image_feats, kernel_type)
     probability_list = []
     for cat_i in range(num_categories):
         svc = svc_list[cat_i]
+        import ipdb; ipdb.set_trace()
         probability = svc.predict_proba(test_image_feats)[:, 1]
         probability_list.append(probability)
     probability_mat = np.array(probability_list)

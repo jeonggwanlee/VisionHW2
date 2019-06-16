@@ -28,12 +28,12 @@ def kmeans_clustering(all_features, vocab_size, epsilon, max_iter):
     all_features_std = np.std(all_features, axis=0)
     normals = []
     for mean, std in zip(all_features_mean, all_features_std):
-        normal_value = np.random.normal(mean, 0.8 * std, num_centroids)
+        normal_value = np.random.normal(mean, std, num_centroids)
         normals.append(normal_value)
     normals = np.array(normals)
     centroids = np.transpose(normals)
 
-    for _ in range(max_iter):
+    for iter in range(max_iter):
 
         distances = pdist(all_features, centroids)
         centroid_idxs_per_point = np.argmin(distances, axis=1)
@@ -56,7 +56,7 @@ def kmeans_clustering(all_features, vocab_size, epsilon, max_iter):
         not_assigned_cent_str = " ".join(map(str, not_assigned_centroid))
 
         dist_max = np.max(centroid_dist_gaps)
-        print('maximum distance: {:7.3f}, not assigned centroid: {}'.format(dist_max, not_assigned_cent_str))
+        print('kmeans_clustering iter : {} maximum distance: {:7.3f}, not assigned centroid: {}'.format(iter, dist_max, not_assigned_cent_str))
         if dist_max < epsilon:
             break
 

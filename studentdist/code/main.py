@@ -13,13 +13,13 @@ from pca_visualize import pca_visualize
 # feature = 'HoG'
 feature = 'SIFT'
 
-kernel_type = 'RBF'
-# kernel_type = 'linear'
+# kernel_type = 'RBF'
+kernel_type = 'linear'
 
 pca_out_dim = 2
 
-# representation = 'bag of words'
-representation = 'spatial_pyramid_feats'
+representation = 'bag of words'
+# representation = 'spatial_pyramid_feats'
 
 max_level = 2
 
@@ -59,7 +59,7 @@ def main():
                   'Computing one from training images')
 
             vocab = build_vocabulary(train_image_paths, vocab_size, feature)
-            import ipdb; ipdb.set_trace()
+            #import ipdb; ipdb.set_trace()
             np.save('vocab_hog', vocab)
     elif feature == 'SIFT':
         if not os.path.exists('vocab_sift.npy'):

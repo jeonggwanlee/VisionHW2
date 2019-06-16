@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-
+import math
 
 def feature_extraction(img, feature):
     """
@@ -34,13 +34,15 @@ def feature_extraction(img, feature):
         hog = cv2.HOGDescriptor(win_size, block_size, block_stride, cell_size, nbins,
                                 deriv_aperture, win_sigma, histogram_norm_type,
                                 l2_hys_threshold, gamma_correction, nlevels)
-        winStride = (32, 32)
+        winStride = (16, 16)
         padding = (0, 0)
         #locations = ((10, 20),)
         hist = hog.compute(img, winStride, padding)
-        import ipdb; ipdb.set_trace()
-        #import ipdb; ipdb.set_trace()
-        return np.zeros((1500, 36))
+        a1 = math.floor((img.shape[0]-win_size[0]) / winStride[0]) + 1
+        b1 = math.floor((img.shape[1]-win_size[1]) / winStride[1]) + 1
+        size = a1 * b1 * 36
+        hist = np.reshape(hist, [-1, 36])
+        return hist
 
     elif feature == 'SIFT':
 
