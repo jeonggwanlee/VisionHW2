@@ -22,6 +22,7 @@ def svm_classify(train_image_feats, train_labels, test_image_feats, kernel_type)
     """
 
     categories = np.unique(train_labels)
+    # [Desc] make 15 different SVM solver (one(each category) vs. the other(14 other category))
     svc_list = []
     num_categories = len(categories)
     for cat_i in tqdm(range(num_categories)):
@@ -30,22 +31,21 @@ def svm_classify(train_image_feats, train_labels, test_image_feats, kernel_type)
             svc = svm.SVC(kernel='rbf', probability=True)
         elif kernel_type == 'linear':
             svc = svm.SVC(kernel='linear', probability=True)
-        this_category_idx = np.where(train_labels == category)[0]
         new_label_for_svm = np.where(train_labels == category, 1, 0)
 
         svc.fit(train_image_feats, new_label_for_svm)
-        predict = svc.predict(train_image_feats)
-        probability = svc.predict_proba(train_image_feats)
         svc_list.append(svc)
 
+    # [Desc] get test images' class using trained svm
     probability_list = []
     for cat_i in range(num_categories):
         svc = svc_list[cat_i]
-        import ipdb; ipdb.set_trace()
-        probability = svc.predict_proba(test_image_feats)[:, 1]
+        logit = svc.decision_function(test_image_feats)
+        probability = logit
         probability_list.append(probability)
     probability_mat = np.array(probability_list)
     probability_mat = np.transpose(probability_mat)
+    # [Desc] get each class to argmax each logit value.
     argmax_class = np.argmax(probability_mat, axis=1)
 
     return categories[argmax_class]

@@ -2,76 +2,186 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ced5cc8-4e64-4a97-8c98-0622903280d2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/feature_extraction.py" afterPath="$PROJECT_DIR$/feature_extraction.py" />
-      <change beforePath="$PROJECT_DIR$/kmeans_clustering.py" afterPath="$PROJECT_DIR$/kmeans_clustering.py" />
-      <change beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-      <change beforePath="$PROJECT_DIR$/results_webpage/confusion_matrix.png" afterPath="$PROJECT_DIR$/results_webpage/confusion_matrix.png" />
-      <change beforePath="$PROJECT_DIR$/results_webpage/index.html" afterPath="$PROJECT_DIR$/results_webpage/index.html" />
-      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0002.jpg" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0002.jpg" />
-      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Coast_image_0097.jpg" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Coast_image_0097.jpg" />
-      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Forest_image_0021.jpg" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Forest_image_0021.jpg" />
-      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Forest_image_0057.jpg" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Forest_image_0057.jpg" />
-      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Industrial_image_0042.jpg" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Industrial_image_0042.jpg" />
-      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Industrial_image_0107.jpg" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Industrial_image_0107.jpg" />
-      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/InsideCity_image_0032.jpg" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/InsideCity_image_0032.jpg" />
-      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0104.jpg" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0104.jpg" />
-      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0085.jpg" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0085.jpg" />
-      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0134.jpg" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0134.jpg" />
-      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Office_image_0022.jpg" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Office_image_0022.jpg" />
-      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Store_image_0268.jpg" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Store_image_0268.jpg" />
-      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Street_image_0147.jpg" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Street_image_0147.jpg" />
-      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Suburb_image_0009.jpg" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Suburb_image_0009.jpg" />
-      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/TallBuilding_image_0126.jpg" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/TallBuilding_image_0126.jpg" />
-      <change beforePath="$PROJECT_DIR$/svm_classify.py" afterPath="$PROJECT_DIR$/svm_classify.py" />
-      <change beforePath="$PROJECT_DIR$/vocab_sift.npy" afterPath="" />
+      <change afterPath="$PROJECT_DIR$/results_webpage/confusion_matrix_siftRBFsp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build_vocabulary.py" beforeDir="false" afterPath="$PROJECT_DIR$/build_vocabulary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature_extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/feature_extraction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_bags_of_words.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_bags_of_words.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_features_from_pca.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_features_from_pca.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_spatial_pyramid_feats.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_spatial_pyramid_feats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kmeans_clustering.py" beforeDir="false" afterPath="$PROJECT_DIR$/kmeans_clustering.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/confusion_matrix.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0002.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0002.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0006.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0006.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0010.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0010.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0047.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0047.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0065.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0065.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0106.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0106.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0119.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0119.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0133.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0133.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0143.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0143.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0149.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0149.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0171.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0171.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0178.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0178.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0179.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0179.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0225.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Bedroom_image_0225.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Coast_image_0004.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Coast_image_0004.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Coast_image_0008.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Coast_image_0008.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Coast_image_0036.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Coast_image_0036.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Coast_image_0082.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Coast_image_0082.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Coast_image_0097.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Coast_image_0097.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Coast_image_0103.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Coast_image_0103.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Coast_image_0220.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Coast_image_0220.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Coast_image_0231.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Coast_image_0231.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Coast_image_0298.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Coast_image_0298.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Forest_image_0046.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Forest_image_0046.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Forest_image_0057.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Forest_image_0057.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Forest_image_0080.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Forest_image_0080.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Forest_image_0222.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Forest_image_0222.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Forest_image_0252.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Forest_image_0252.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Forest_image_0288.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Forest_image_0288.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Forest_image_0315.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Forest_image_0315.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Highway_image_0014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Highway_image_0014.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Highway_image_0027.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Highway_image_0027.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Highway_image_0046.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Highway_image_0046.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Highway_image_0103.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Highway_image_0103.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Highway_image_0141.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Highway_image_0141.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Highway_image_0170.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Highway_image_0170.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Highway_image_0186.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Highway_image_0186.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Highway_image_0241.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Highway_image_0241.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Industrial_image_0042.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Industrial_image_0042.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Industrial_image_0046.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Industrial_image_0046.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Industrial_image_0081.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Industrial_image_0081.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Industrial_image_0104.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Industrial_image_0104.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Industrial_image_0119.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Industrial_image_0119.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Industrial_image_0135.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Industrial_image_0135.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Industrial_image_0142.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Industrial_image_0142.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Industrial_image_0201.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Industrial_image_0201.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Industrial_image_0284.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Industrial_image_0284.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Industrial_image_0309.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Industrial_image_0309.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/InsideCity_image_0015.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/InsideCity_image_0015.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/InsideCity_image_0080.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/InsideCity_image_0080.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/InsideCity_image_0093.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/InsideCity_image_0093.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/InsideCity_image_0193.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/InsideCity_image_0193.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/InsideCity_image_0220.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/InsideCity_image_0220.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/InsideCity_image_0284.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/InsideCity_image_0284.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0004.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0004.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0008.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0008.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0017.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0017.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0022.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0022.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0047.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0047.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0064.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0064.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0080.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0080.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0085.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0085.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0104.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0104.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0119.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0119.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0120.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0120.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0135.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Kitchen_image_0135.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0004.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0004.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0008.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0008.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0011.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0011.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0024.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0024.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0053.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0053.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0057.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0057.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0060.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0060.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0069.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0069.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0074.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0074.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0098.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0098.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0118.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0118.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0134.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0134.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0138.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0138.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0255.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/LivingRoom_image_0255.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Mountain_image_0014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Mountain_image_0014.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Mountain_image_0023.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Mountain_image_0023.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Mountain_image_0028.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Mountain_image_0028.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Mountain_image_0082.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Mountain_image_0082.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Mountain_image_0089.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Mountain_image_0089.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Mountain_image_0097.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Mountain_image_0097.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Mountain_image_0117.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Mountain_image_0117.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Mountain_image_0323.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Mountain_image_0323.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Office_image_0001.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Office_image_0001.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Office_image_0052.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Office_image_0052.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Office_image_0056.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Office_image_0056.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Office_image_0057.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Office_image_0057.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Office_image_0082.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Office_image_0082.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Office_image_0106.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Office_image_0106.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Office_image_0141.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Office_image_0141.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Office_image_0225.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Office_image_0225.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Office_image_0277.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Office_image_0277.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/OpenCountry_image_0005.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/OpenCountry_image_0005.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/OpenCountry_image_0097.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/OpenCountry_image_0097.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/OpenCountry_image_0107.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/OpenCountry_image_0107.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/OpenCountry_image_0147.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/OpenCountry_image_0147.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/OpenCountry_image_0198.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/OpenCountry_image_0198.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/OpenCountry_image_0254.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/OpenCountry_image_0254.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/OpenCountry_image_0280.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/OpenCountry_image_0280.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/OpenCountry_image_0293.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/OpenCountry_image_0293.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/OpenCountry_image_0296.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/OpenCountry_image_0296.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/OpenCountry_image_0316.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/OpenCountry_image_0316.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Store_image_0011.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Store_image_0011.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Store_image_0013.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Store_image_0013.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Store_image_0020.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Store_image_0020.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Store_image_0060.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Store_image_0060.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Store_image_0077.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Store_image_0077.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Store_image_0107.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Store_image_0107.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Store_image_0120.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Store_image_0120.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Store_image_0143.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Store_image_0143.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Store_image_0145.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Store_image_0145.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Store_image_0231.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Store_image_0231.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Store_image_0251.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Store_image_0251.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Street_image_0014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Street_image_0014.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Street_image_0021.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Street_image_0021.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Street_image_0097.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Street_image_0097.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Street_image_0119.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Street_image_0119.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Street_image_0142.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Street_image_0142.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Street_image_0143.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Street_image_0143.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Street_image_0158.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Street_image_0158.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Street_image_0166.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Street_image_0166.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Street_image_0205.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Street_image_0205.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Street_image_0238.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Street_image_0238.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Suburb_image_0009.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Suburb_image_0009.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Suburb_image_0032.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Suburb_image_0032.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Suburb_image_0033.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Suburb_image_0033.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Suburb_image_0046.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Suburb_image_0046.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Suburb_image_0118.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Suburb_image_0118.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Suburb_image_0146.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Suburb_image_0146.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/Suburb_image_0168.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/Suburb_image_0168.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/TallBuilding_image_0020.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/TallBuilding_image_0020.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/TallBuilding_image_0134.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/TallBuilding_image_0134.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_webpage/thumbnails/TallBuilding_image_0277.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/results_webpage/thumbnails/TallBuilding_image_0277.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svm_classify.py" beforeDir="false" afterPath="$PROJECT_DIR$/svm_classify.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vocab_hog2.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vocab_hog3.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vocab_sift.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vocab_sift2.npy" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file leaf-file-name="kmeans_clustering.py" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/kmeans_clustering.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="780">
-                    <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-                    <folding>
-                      <element signature="e#0#18#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="get_bags_of_words.py" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/get_bags_of_words.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="510">
-                    <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kmeans_clustering.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+            <state relative-caret-position="144">
+              <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -79,31 +189,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build_vocabulary.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/get_bags_of_words.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="808">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build_vocabulary.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="32" column="39" lean-forward="false" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
-              <folding />
+            <state relative-caret-position="522">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="svm_classify.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/svm_classify.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-              <folding />
+            <state relative-caret-position="600">
+              <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pca_visualize.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pca_visualize.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -111,26 +228,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get_features_from_pca.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/get_features_from_pca.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="648">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="feature_extraction.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/feature_extraction.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/get_spatial_pyramid_feats.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
+            <state>
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results_webpage/confusion_matrix_siftRBFbow.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results_webpage/confusion_matrix_siftRBFsp.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -142,40 +265,30 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/distance.py" />
-        <option value="$PROJECT_DIR$/build_vocabulary.py" />
-        <option value="$PROJECT_DIR$/get_features_from_pca.py" />
         <option value="$PROJECT_DIR$/pca_visualize.py" />
+        <option value="$PROJECT_DIR$/build_vocabulary.py" />
+        <option value="$PROJECT_DIR$/feature_extraction.py" />
+        <option value="$PROJECT_DIR$/kmeans_clustering.py" />
+        <option value="$PROJECT_DIR$/get_features_from_pca.py" />
         <option value="$PROJECT_DIR$/get_bags_of_words.py" />
         <option value="$PROJECT_DIR$/get_spatial_pyramid_feats.py" />
-        <option value="$PROJECT_DIR$/feature_extraction.py" />
         <option value="$PROJECT_DIR$/svm_classify.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/kmeans_clustering.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="941" />
-    <option name="height" value="1024" />
+    <option name="x" value="145" />
+    <option name="y" value="210" />
+    <option name="width" value="858" />
+    <option name="height" value="873" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -197,13 +310,18 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -219,6 +337,7 @@
   </component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -229,14 +348,17 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="code" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python">
+      <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -247,16 +369,15 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="code" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -272,317 +393,156 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="941" height="1024" extended-state="0" />
+    <frame x="65" y="-4" width="1855" height="1204" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19673914" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32938644" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938644" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4058127" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328792" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15829694" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.328792" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30517712" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.31425977" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32938644" />
+      <window_info anchor="bottom" id="Python Console" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-    </breakpoint-manager>
-    <watches-manager />
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15829694" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.328792" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32938644" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.31425977" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32938644" />
+      <window_info anchor="bottom" id="Python Console" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create_results_webpage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/svm_classify.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="37" column="24" lean-forward="false" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_spatial_pyramid_feats.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/distance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pca_visualize.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_features_from_pca.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature_extraction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create_results_webpage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/svm_classify.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/distance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pca_visualize.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_features_from_pca.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature_extraction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_spatial_pyramid_feats.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build_vocabulary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kmeans_clustering.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_bags_of_words.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/get_image_paths.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
+        <state relative-caret-position="-8" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/vision_hw2/lib/python3.7/site-packages/IPython/core/debugger.py" />
     <entry file="file://$USER_HOME$/anaconda3/envs/vision_hw2/lib/python3.7/site-packages/sklearn/svm/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="520" column="0" lean-forward="false" selection-start-line="520" selection-start-column="0" selection-end-line="520" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/distance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_features_from_pca.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
+          <caret line="520" selection-start-line="520" selection-end-line="520" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/create_results_webpage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state>
           <folding>
             <element signature="e#0#10#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/vision_hw2/lib/python3.7/bdb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="153" selection-start-line="153" selection-end-line="153" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/distance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature_extraction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pca_visualize.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/build_vocabulary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_bags_of_words.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="808">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_features_from_pca.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results_webpage/confusion_matrix_siftRBFbow.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results_webpage/confusion_matrix_siftRBFsp.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/kmeans_clustering.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="54">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/feature_extraction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/get_spatial_pyramid_feats.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1076">
-          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_bags_of_words.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
+        <state>
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/svm_classify.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build_vocabulary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="32" column="39" lean-forward="false" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="600">
+          <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+        <state relative-caret-position="144">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

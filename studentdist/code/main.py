@@ -10,16 +10,16 @@ from svm_classify import svm_classify
 from get_spatial_pyramid_feats import get_spatial_pyramid_feats
 from pca_visualize import pca_visualize
 
-# feature = 'HoG'
+#feature = 'HoG'
 feature = 'SIFT'
 
-# kernel_type = 'RBF'
+#kernel_type = 'RBF'
 kernel_type = 'linear'
 
 pca_out_dim = 2
 
-representation = 'bag of words'
-# representation = 'spatial_pyramid_feats'
+# representation = 'bag of words'
+representation = 'spatial_pyramid_feats'
 
 max_level = 2
 

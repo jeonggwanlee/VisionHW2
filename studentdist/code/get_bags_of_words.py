@@ -31,18 +31,21 @@ def get_bags_of_words(image_paths, feature):
 
     vocab_size = vocab.shape[0]
     bags_of_words = []
-    for i in tqdm(range(len(image_paths))):
+    for i in tqdm(range(len(image_paths)), desc='get_bags_of_words'):
         path = image_paths[i]
         img = cv2.imread(path)[:, :, ::-1]
 
         features = feature_extraction(img, feature)
         distance_mat = pdist(features, vocab)
+        # [Desc] get centroid idx(bag_of_words feature index) from feature
         centroid_pos = np.argmin(distance_mat, axis=1)
 
+        # [Desc] Define bag_of_words as  np.array
         bag_of_words = np.zeros([vocab_size])
         unique, counts = np.unique(centroid_pos, return_counts=True)
         for uniq, count in zip(unique, counts):
             bag_of_words[uniq] = count
+        # [Desc] Bag_of_words normalization
         bag_of_words = (bag_of_words - np.mean(bag_of_words)) / np.std(bag_of_words)
         bags_of_words.append(bag_of_words)
 
